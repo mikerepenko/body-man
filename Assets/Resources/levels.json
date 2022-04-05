@@ -1,0 +1,67 @@
+{
+    "list": [
+    {
+        "backgroundSpeed": 11, 
+        "grassSpeed": 12, 
+        "roadSpeed": 13,
+        "obstacleSpeed": 13,
+        "homeSpeed": 12,
+		"gravityScale": 6.2,
+        "scoreUp": 5
+    },
+    {
+        "backgroundSpeed": 12, 
+        "grassSpeed": 13, 
+        "roadSpeed": 14,
+        "obstacleSpeed": 14,
+        "homeSpeed": 13,
+		"gravityScale": 6.4,
+        "scoreUp": 10
+    },
+	{
+	    "backgroundSpeed": 13, 
+        "grassSpeed": 14, 
+        "roadSpeed": 15,
+        "obstacleSpeed": 15,
+        "homeSpeed": 14,
+		"gravityScale": 6.8,
+        "scoreUp": 15
+    },
+	{
+	    "backgroundSpeed": 14, 
+        "grassSpeed": 15, 
+        "roadSpeed": 16,
+        "obstacleSpeed": 16,
+        "homeSpeed": 15,
+		"gravityScale": 7.2,
+        "scoreUp": 20
+    },
+	{
+	    "backgroundSpeed": 15, 
+        "grassSpeed": 16, 
+        "roadSpeed": 17,
+        "obstacleSpeed": 17,
+        "homeSpeed": 16,
+		"gravityScale": 7.6,
+        "scoreUp": 25
+    },
+	{
+	    "backgroundSpeed": 16, 
+        "grassSpeed": 17, 
+        "roadSpeed": 18,
+        "obstacleSpeed": 18,
+        "homeSpeed": 17,
+		"gravityScale": 8.0,
+        "scoreUp": 30
+    },
+	{
+	    "backgroundSpeed": 17, 
+        "grassSpeed": 18, 
+        "roadSpeed": 19,
+        "obstacleSpeed": 19,
+        "homeSpeed": 18,
+		"gravityScale": 8.4,
+        "scoreUp": -1
+    }
+   ]
+}

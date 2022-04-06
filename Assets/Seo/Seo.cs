@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using AppodealAds.Unity.Common;
-using AppodealAds.Unity.Api;
+//using AppodealAds.Unity.Common;
+//using AppodealAds.Unity.Api;
 
-public class Seo : MonoBehaviour, IRewardedVideoAdListener {
+public class Seo : MonoBehaviour/*, IRewardedVideoAdListener*/ {
 
 		#region Rewarded Video callback handlers
 		public void onRewardedVideoLoaded() { print("Video loaded"); }
@@ -20,38 +20,38 @@ public class Seo : MonoBehaviour, IRewardedVideoAdListener {
 		void Awake()
     {
 		//Подключение Appodeal
-		string appKey = "0c42a67ae03adf56ac9f3d9d4ffee4147d61c789cc2a7435";
-		Appodeal.disableLocationPermissionCheck();
+		//string appKey = "0c42a67ae03adf56ac9f3d9d4ffee4147d61c789cc2a7435";
+		//Appodeal.disableLocationPermissionCheck();
 		//Appodeal.setTesting(true);
-		Appodeal.initialize(appKey, Appodeal.REWARDED_VIDEO | Appodeal.INTERSTITIAL);
-		Appodeal.setRewardedVideoCallbacks(this);
+		//Appodeal.initialize(appKey, Appodeal.REWARDED_VIDEO | Appodeal.INTERSTITIAL);
+		//Appodeal.setRewardedVideoCallbacks(this);
     }
 		public void StartCallBack()
     {
 				GameObject.Find ("Click").GetComponent<AudioSource> ().Play ();
        //Проверка наличия интернета
-        if(Appodeal.isLoaded(Appodeal.REWARDED_VIDEO))
-            Appodeal.show(Appodeal.REWARDED_VIDEO);
+        //if(Appodeal.isLoaded(Appodeal.REWARDED_VIDEO))
+            //Appodeal.show(Appodeal.REWARDED_VIDEO);
     }
 		public void StartInterstitial()
     {
-        if (Appodeal.isLoaded(Appodeal.INTERSTITIAL))
-            Appodeal.show(Appodeal.INTERSTITIAL);
+        //if (Appodeal.isLoaded(Appodeal.INTERSTITIAL))
+           //Appodeal.show(Appodeal.INTERSTITIAL);
     }
 		public void StartBanner()
     {
-        if (Appodeal.isLoaded(Appodeal.BANNER_BOTTOM))
-            Appodeal.show(Appodeal.BANNER_BOTTOM);
+        //if (Appodeal.isLoaded(Appodeal.BANNER_BOTTOM))
+            //Appodeal.show(Appodeal.BANNER_BOTTOM);
     }
 		public void StopBanner()
     {
-        Appodeal.hide(Appodeal.INTERSTITIAL);
+        //Appodeal.hide(Appodeal.INTERSTITIAL);
     }
 
 
 
 		public void OffAds(){
-				Appodeal.hide(Appodeal.BANNER_BOTTOM);
-        Appodeal.hide(Appodeal.INTERSTITIAL);
+				//Appodeal.hide(Appodeal.BANNER_BOTTOM);
+        //Appodeal.hide(Appodeal.INTERSTITIAL);
 		}
 }
